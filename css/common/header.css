@@ -299,6 +299,7 @@ margin:0px 12px;;
   cursor: pointer;
   border: none;
   box-shadow: 2px 2px 3px 0px hsla(0, 0%, 0%, .2);
+  z-index:3;
 }
 #go_top img{
   height: 1.5rem;
