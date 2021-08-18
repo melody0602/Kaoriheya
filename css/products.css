@@ -1,0 +1,200 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+/* 外部輪播套件 */
+@import "./slick.css";
+@import "./slick-theme.css";
+
+
+div.body_parents{
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0;
+  /* border: 1px solid black; */
+  display: inline-flex;
+}
+
+div.body_parents div.body_lock{
+  /* height: 3000px; */
+  /* width: 1200px; */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* font-size: 16px; */
+  /* border: 1px solid #28FF28; */
+  display: grid;
+  /* inline-flex; */
+  padding-top: 40px;
+  font-family: 'EB Garamond','Noto Sans TC';
+  /* font-family: 'EB Garamond', serif; */
+  /* justify-content: space-between; */
+}
+
+/* 首頁第一屏 */
+div.body_parents div.body_lock div.grid-container{
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  grid-row-gap: 80px;
+}
+
+
+/* 卡片文字蓋圖 */
+div.body_parents div.body_lock div.grid-container div.grid-item {
+  /* border: 1px solid #467500; */
+  width:366px;
+  height:366px;
+  overflow:hidden;
+  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  /* text-align: center; */
+  position: relative;
+}
+div.body_parents div.body_lock div.grid-container div.grid-item a{
+  text-decoration:none;
+}
+div.other_notes{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, .5);
+  /* font-size: .8rem;
+  color: white;
+  padding: 5px 10px; */
+  border-radius: 5px;
+
+  transform: translateY(100%);
+
+  transition: transform .5s;
+}
+div.grid-item:hover div.other_notes{
+  transform: translateY(10%);
+}
+div.other_notes p.other_notes_p{
+  margin-bottom:0rem;
+  font-size: 1rem;
+  color: #3E3A39;
+  padding: 5px 10px;
+}
+div.other_notes p.other_notes_p2{
+  margin-top: 0rem;
+  font-size: 1.6rem;
+  color: #3E3A39;
+  padding: 5px 10px;
+}
+
+div.body_parents div.body_lock div.grid-container div.grid-item_two {
+  /* border: 1px solid #467500; */
+  width:366px;
+  height:366px;
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  /* text-align: center; */
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+}
+div.body_parents div.body_lock div.grid-container div.grid-item_two2 {
+  /* border: 1px solid #467500; */
+  width:366px;
+  height:366px;
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  /* text-align: center; */
+  animation-name: move2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+/* 文字移出 */
+@keyframes move {
+  0% {
+    transform: translateX(130%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translateX(-130%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* 圖片滑鼠移過放大效果 */
+div.body_parents div.body_lock div.grid-container div.grid-item img{
+  /* box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3); */
+  width:366px;
+  height:366px;
+  transform:scale(1,1);
+  transition: all 0.8s ease-out;
+
+}
+div.body_parents div.body_lock div.grid-container div.grid-item img:hover{
+   transform:scale(1.2,1.2);
+}
+/* 文字部分 */
+div.body_parents div.body_lock div.grid-container div.grid-item_two p.index_title{
+  /* margin: 0; */
+  margin-bottom: 1rem;
+  /* font-family: 'EB Garamond', serif; */
+  font-size: 52px;
+  color: #3E3A39;
+}
+div.body_parents div.body_lock div.grid-container div.grid-item_two p.index_text{
+  margin: 0;
+  margin-top: 0;
+  font-size: 19px;
+  color: #3E3A39;
+}
+div.body_parents div.body_lock div.grid-container div.grid-item_two2 p.index_title2{
+  margin: 0;
+  margin-bottom: 1rem;
+  /* font-family: 'EB Garamond', serif; */
+  font-size: 47px;
+  color: #8E8E8E;
+}
+div.body_parents div.body_lock div.grid-container div.grid-item_two2 p.index_text2{
+  /* margin: 0; */
+  margin-top: 0;
+  font-size: 19px;
+  color: #8E8E8E;
+}
+
+
+
+/* 商品分類 按鈕樣式 */
+div.shiny button{
+  background-color: #DADCCE;
+  border: none;
+  color: #3E3A39;
+  margin-bottom: 40px;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  font-size: 14px;
+}

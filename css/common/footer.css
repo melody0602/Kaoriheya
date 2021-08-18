@@ -1,0 +1,126 @@
+footer.footer{
+  width: 100%;
+  /* min-width: 1200px; */
+  margin: 0 auto;
+  font-size: 0;
+  /* border: 1px solid black; */
+  background-color: #D3C8CA;
+  display: inline-flex;
+  /* transform: translateX(10%); */
+
+  /* overflow:auto; */
+  /* position: relative; */
+}
+footer.footer div.lock{
+  /* max-width: 1200px; */
+  width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  /* border: 1px solid #28FF28; */
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* position: absolute; */
+}
+footer.footer div.lock div{
+  display: inline-flex;
+  flex-direction: column;
+}
+/* 文字部分 */
+/* footer.footer div.lock p{
+  font-family: 'EB Garamond','Noto Sans TC';
+  text-align:center;
+} */
+footer.footer div.lock p.footer_title1{
+  font-family: 'Noto Sans TC';
+  font-weight: 600;
+  color: #3E3A39;
+  text-align:center;
+  font-size: 38px;
+  margin-bottom: 0;
+}
+footer.footer div.lock p.footer_title2{
+  font-family: 'EB Garamond';
+  color: #3E3A39;
+  text-align:center;
+  font-size: 22px;
+  margin-top: 0.7rem;
+  margin-bottom: 3rem;
+}
+footer.footer div.lock p.footer_text1{
+  font-family: 'EB Garamond';
+  color: #3E3A39;
+  text-align:center;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+footer.footer div.lock div.footer_text2{
+  /* text-align:center; */
+  display: inline-flex;
+  flex-direction:row;
+  justify-content:center;
+}
+footer.footer div.lock div.footer_text2 a.footer_text2_1{
+  font-family: 'Noto Sans TC';
+  font-weight: 200;
+  color: #3E3A39;
+  font-size: 14px;
+  padding-right: 1.5rem;
+}
+footer.footer div.lock div.footer_text2 a.footer_text2_2{
+  font-family: 'Noto Sans TC';
+  font-weight: 200;
+  color: #3E3A39;
+  font-size: 14px;
+  padding-right: 0;
+}
+footer.footer div.lock p.footer_text3{
+  font-family: 'Noto Sans TC';
+  color: #3E3A39;
+  text-align:center;
+  font-size: 12px;
+}
+footer.footer div.lock p.footer_text4{
+  font-family: 'Noto Sans TC';
+  color: #3E3A39;
+  text-align:center;
+  font-size: 12px;
+}
+footer.footer div.lock p.footer_text5{
+  font-family: 'Noto Sans TC';
+  color: #3E3A39;
+  text-align:center;
+  font-size: 6px;
+  margin-top: 5rem;
+}
+/* footer.footer div.lock div.footer_slideshow{
+  border: 1px solid #28FF28;
+  display: inline-flex;
+  flex-direction:row;
+  justify-content:center;
+} */
+
+/* 輪播圖 */
+footer.footer div.lock div.grid-container{
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+footer.footer div.lock div.grid-container div.grid-item {
+  /* border: 1px solid #467500; */
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  /* text-align: center; */
+}
+/* 圖片陰影 */
+footer.footer div.lock div.grid-container div.grid-item img{
+  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
+  width:366px;
+  height:366px;
+}
