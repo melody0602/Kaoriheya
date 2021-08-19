@@ -75,6 +75,7 @@ div.other_notes{
 }
 div.grid-item:hover div.other_notes{
   transform: translateY(0%);
+  overflow:hidden;
 }
 div.other_notes p.other_notes_p{
   margin-bottom:0rem;
