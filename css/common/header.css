@@ -57,8 +57,9 @@ header.header nav.nav ul.link_list > li > a{
   margin: auto 0;
 }
 header.header nav.nav ul.link_list > li > a img{
-  height: 1rem;
-  padding-right: 6px;
+  height: 16px;
+  padding-right: 5px;
+  padding-top: 5px;
 }
 header.header nav.nav ul.link_list > li > a.-on{
   color: #3E3A39;
@@ -67,7 +68,7 @@ header.header nav.nav ul.link_list > li > a:hover{
   color: #8E8E8E;
 }
 header.header nav.nav ul.link_list > li div.social_block{
-  font-size: 1rem;
+  font-size: 16px;
   position: relative;
   padding: 14px 0;
   box-sizing: border-box;
@@ -78,8 +79,9 @@ header.header nav.nav ul.link_list > li div.social_block{
 }
 
 header.header nav.nav ul.link_list > li div.social_block img{
-  height: 1.1rem;
-  padding-right: 6px;
+  height: 17px;
+  padding-right: 5px;
+  padding-top: 5px;
 }
 
 header.header nav.nav ul.link_list > li div.social_block:hover ul.social_list{
