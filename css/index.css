@@ -50,11 +50,11 @@ div.body_parents div.grid-container-first div.full_screen{
   background-size: cover;
   background-position: center center;
 }
-/* @media screen and (max-width: 1399.98px){
-  div.body_parents div.grid-container div.full_scree{
-    height: 760px;
+@media screen and (max-width: 767px){
+  div.body_parents div.grid-container-first div.full_screen{
+    height: 667px;
   }
-} */
+}
 /* logo */
 div.logo_box{
   /* border: 1px solid red; */
@@ -67,12 +67,17 @@ div.logo_box{
 }
 @media screen and (max-width: 767px){
   div.logo_box{
-    margin-top: -300px;
+    margin-top: -500px;
   }
 }
 div.logo_box img.logo{
   max-height: 45px;
 }
+/* @media screen and (max-width: 767px){
+  div.logo_box img.logo{
+    max-height: 35px;
+  }
+} */
 div.logo_box img.shiny{
   max-height: 12px;
   margin-bottom: 15px;
@@ -195,7 +200,7 @@ div.full_screen img.title{
 }
 @media screen and (max-width: 767px){
   div.full_screen img.title{
-    margin-top: -200px;
+    margin-top: -250px;
     max-width: 310px;
     max-height: 196px;
   }
@@ -258,8 +263,8 @@ div.full_screen img.door{
 /* 門 */
 div.full_screen img.door_phone{
   max-width: 100%;
-  min-width: 576px;
-  min-height: 1022px;
+  min-width: 375px;
+  min-height: 667px;
   position: relative;
   z-index:1;
   display: none;
