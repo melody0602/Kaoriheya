@@ -577,6 +577,9 @@ div.grid-container3 div.grid-item3_2 {
   /* padding: 20px; */
   padding: 1.5rem;
   /* text-align: center; */
+  -webkit-box-orient: vertical;
+  /* 限制指定的行數 */
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 @media screen and (max-width: 767px){
@@ -597,6 +600,7 @@ div.grid-container3 div.grid-item3_3 {
   padding: 1.5rem;
   /* text-align: center; */
   overflow: hidden;
+
 }
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_3{
@@ -696,11 +700,12 @@ p.grid-container3_text2{
   margin: 0;
  font-size: 19px;
  color: #3E3A39;
+ font-style: italic;
+ font-family: 'EB Garamond', serif;
 }
 p.grid-container3_text3{
  font-size: 16px;
  color: #3E3A39;
- text-overflow: ellipsis;
 }
 
 /* 首頁第三屏 圖片樣式 */
