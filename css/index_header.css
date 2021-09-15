@@ -81,6 +81,7 @@ header.header{
   transition: transform 1s;
   box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
 }
+
 header.header div.lock{
   max-width: 1200px;
   /* width: 100%; */
@@ -94,8 +95,8 @@ header.header div.lock{
 }
 @media screen and (max-width: 767px){
   header.header div.lock{
-    max-width: 767px;
-    height: 80px;
+    margin: 0;
+    padding-left: 2px;
   }
 }
 header.header nav.nav{
@@ -110,6 +111,7 @@ header.header a.logo_img{
   font-size: 0;
   margin: auto 0;
 }
+
 header.header a.logo_img img{
   height: 65px;
 }
@@ -356,7 +358,12 @@ ul.nav_list{
   /* margin: 0; */
   padding: 0;
   opacity: .8;
-  border-radius:10px;
+  border-radius:2px;
+}
+@media screen and (max-width: 767px){
+  ul.nav_list{
+    width: 100vw;
+  }
 }
 ul.nav_list > li{
   display: inline-block;
@@ -380,6 +387,7 @@ header.header nav.main_nav ul.nav_list > li > a{
   margin: auto 0;
   color: #3D3A39;
 }
+
 button.hamburger.hamburger--squeeze{
   display: none;
 }
