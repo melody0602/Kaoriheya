@@ -67,7 +67,7 @@ div.logo_box{
 }
 @media screen and (max-width: 767px){
   div.logo_box{
-    margin-top: -400px;
+    margin-top: -300px;
   }
 }
 div.logo_box img.logo{
@@ -200,7 +200,7 @@ div.full_screen img.title{
 }
 @media screen and (max-width: 767px){
   div.full_screen img.title{
-    margin-top: -150px;
+    margin-top: -190px;
     max-width: 310px;
     max-height: 196px;
   }
@@ -211,6 +211,11 @@ div.full_screen img.with{
   height: 15px;
   position: absolute;
   z-index:2;
+}
+@media screen and (max-width: 767px){
+  div.full_screen img.with{
+    margin-top: 400px;
+  }
 }
 /* 資訊條 */
 div.label_box{
@@ -351,6 +356,11 @@ div.other_notes{
 
   transform: translateY(100%);
   transition: transform .5s;
+}
+@media screen and (max-width: 768px){
+  div.other_notes{
+    transform: translateY(10%);
+  }
 }
 div.grid-item:hover div.other_notes{
   transform: translateY(10%);
