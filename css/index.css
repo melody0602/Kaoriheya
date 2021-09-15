@@ -259,12 +259,11 @@ justify-content: space-evenly;
 flex-wrap: wrap;
 padding: 30px;
 }
-/* @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
   div.grid-container{
-    flex-direction: column;
-    align-items: center;
+    padding: 5px;
   }
-} */
+}
 
 div.grid-container div.grid-item {
   /* border: 1px solid #467500; */
@@ -277,6 +276,11 @@ div.grid-container div.grid-item {
   text-align: center;
   position: relative;
   margin: 20px;
+}
+@media screen and (max-width: 768px){
+  div.grid-container div.grid-item{
+    margin: 3px;
+  }
 }
 /* 老師新增 */
 .grid-item a{
