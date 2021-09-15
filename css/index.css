@@ -67,7 +67,7 @@ div.logo_box{
 }
 @media screen and (max-width: 767px){
   div.logo_box{
-    margin-top: -500px;
+    margin-top: -400px;
   }
 }
 div.logo_box img.logo{
@@ -200,7 +200,7 @@ div.full_screen img.title{
 }
 @media screen and (max-width: 767px){
   div.full_screen img.title{
-    margin-top: -250px;
+    margin-top: -150px;
     max-width: 310px;
     max-height: 196px;
   }
