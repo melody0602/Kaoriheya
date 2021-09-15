@@ -94,7 +94,8 @@ header.header div.lock{
 }
 @media screen and (max-width: 767px){
   header.header div.lock{
-
+    max-width: 767px;
+    height: 80px;
   }
 }
 header.header nav.nav{

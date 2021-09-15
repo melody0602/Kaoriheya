@@ -13,11 +13,11 @@ body{
 }
 
 
-div.other_contents{
+/* div.other_contents{
   height: 500px;
   border: 1px solid black;
   margin-left: 1rem;
-}
+} */
 
 /* 自訂滑鼠游標 */
 /* body{
