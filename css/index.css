@@ -67,7 +67,7 @@ div.logo_box{
 }
 @media screen and (max-width: 767px){
   div.logo_box{
-    margin-top: 0px;
+    margin-top: -500px;
   }
 }
 div.logo_box img.logo{
@@ -192,6 +192,11 @@ div.full_screen img.title{
   max-height: 391px;
   position: absolute;
   z-index:2;
+}
+@media screen and (max-width: 767px){
+  div.full_screen img.title{
+    margin-top: -50px;
+  }
 }
 /* 副標題 */
 div.full_screen img.with{
