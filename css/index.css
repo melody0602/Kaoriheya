@@ -214,8 +214,8 @@ div.full_screen img.with{
 }
 @media screen and (max-width: 767px){
   div.full_screen img.with{
-    /* margin-top: 110%; */
-    margin-bottom: 120%;
+    margin-top: 110%;
+    /* margin-bottom: 120%; */
   }
 }
 /* 資訊條 */
