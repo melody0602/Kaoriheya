@@ -261,7 +261,7 @@ padding: 30px;
 }
 @media screen and (max-width: 768px){
   div.grid-container{
-    padding: 5px;
+    padding:5px;
   }
 }
 
@@ -279,7 +279,7 @@ div.grid-container div.grid-item {
 }
 @media screen and (max-width: 768px){
   div.grid-container div.grid-item{
-    margin: 3px;
+    margin: 8px;
   }
 }
 /* 老師新增 */
@@ -348,6 +348,8 @@ div.grid-container div.grid-item img:hover{
 div.text_text{
   position: absolute;
   top:0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 div.text_text p.index_title{
   margin: 0;
@@ -358,10 +360,17 @@ div.text_text p.index_title{
   color: #3E3A39;
   text-align: left;
 }
+@media screen and (max-width: 768px){
+  div.text_text p.index_title{
+    font-size: 30px;
+    line-height: 1;
+
+  }
+}
 div.text_text p.index_text{
   margin: 0;
   margin-top: 0;
-  font-size: 19px;
+  font-size: 30px;
   color: #3E3A39;
   text-align: left;
   font-style: italic;
@@ -380,6 +389,12 @@ div.text_text p.index_title2{
   font-size: 47px;
   color: #8E8E8E;
   text-align: left;
+}
+@media screen and (max-width: 768px){
+  div.text_text p.index_title2{
+    font-size: 30px;
+    line-height: 1;
+  }
 }
 div.text_text p.index_text2{
   /* margin: 0; */
