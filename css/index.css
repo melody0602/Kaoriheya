@@ -448,6 +448,8 @@ div.grid-container2 div.grid-item2 p.test_title{
   color: #3E3A39;
   margin-top: 6rem;
   margin-bottom: 0;
+  overflow : hidden;
+ text-overflow : ellipsis;
 }
 div.grid-container2 div.grid-item2 p.test_text{
   font-size: 22px;
