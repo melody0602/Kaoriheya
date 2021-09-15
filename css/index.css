@@ -348,7 +348,8 @@ div.text_text{
 div.text_text p.index_title{
   margin: 0;
   margin-bottom: 1rem;
-  /* font-family: 'EB Garamond', serif; */
+  font-style: italic;
+    font-family: 'EB Garamond', serif;
   font-size: 51px;
   color: #3E3A39;
   text-align: left;
@@ -359,6 +360,7 @@ div.text_text p.index_text{
   font-size: 19px;
   color: #3E3A39;
   text-align: left;
+  font-style: italic;
 }
 @media screen and (max-width: 768px){
   div.text_text p.index_text{
@@ -368,7 +370,8 @@ div.text_text p.index_text{
 div.text_text p.index_title2{
   margin: 0;
   margin-bottom: 1rem;
-  /* font-family: 'EB Garamond', serif; */
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
   font-size: 47px;
   color: #8E8E8E;
   text-align: left;
@@ -379,6 +382,7 @@ div.text_text p.index_text2{
   font-size: 19px;
   color: #8E8E8E;
   text-align: left;
+  font-style: italic;
 }
 @media screen and (max-width: 768px){
   div.text_text p.index_text2{
