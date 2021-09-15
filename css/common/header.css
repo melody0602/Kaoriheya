@@ -30,6 +30,8 @@
   color: #343535;
   margin-top: 4px;
   margin: 0;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
 }
 
 @keyframes floattop{
@@ -93,7 +95,8 @@ header.header div.lock{
 }
 @media screen and (max-width: 767px){
   header.header div.lock{
-
+    margin: 0;
+    padding-left: 2px;
   }
 }
 header.header nav.nav{
