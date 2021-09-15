@@ -65,6 +65,11 @@ div.logo_box{
   animation-duration: 2s;
   animation-iteration-count: infinite; */
 }
+@media screen and (max-width: 767px){
+  div.logo_box{
+    margin-top: 0px;
+  }
+}
 div.logo_box img.logo{
   max-height: 45px;
 }
