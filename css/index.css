@@ -44,7 +44,7 @@ div.body_parents div.grid-container-first div.full_screen{
   align-items: center;
   vertical-align: middle;
   /* 背景圖 */
-  background-image: url("../images/full_screen/01.gif");
+  background-image: url("../images/full_screen/02.gif");
   background-repeat:no-repeat;
   /* height: 630px; */
   background-size: cover;
@@ -195,7 +195,9 @@ div.full_screen img.title{
 }
 @media screen and (max-width: 767px){
   div.full_screen img.title{
-    margin-top: -50px;
+    margin-top: -200px;
+    max-width: 310px;
+    max-height: 196px;
   }
 }
 /* 副標題 */
@@ -244,8 +246,30 @@ div.full_screen img.door{
   min-height: 760px;
   position: relative;
   z-index:1;
+  display: block;
   /* opacity: .5; */
   /* left: -50%; */
+}
+@media screen and (max-width: 767px){
+  div.full_screen img.door{
+    display: none;
+  }
+}
+/* 門 */
+div.full_screen img.door_phone{
+  max-width: 100%;
+  min-width: 576px;
+  min-height: 1022px;
+  position: relative;
+  z-index:1;
+  display: none;
+  /* opacity: .5; */
+  /* left: -50%; */
+}
+@media screen and (max-width: 767px){
+  div.full_screen img.door_phone{
+    display: block;
+  }
 }
 
 /* =============== 第二屏 =============== */
