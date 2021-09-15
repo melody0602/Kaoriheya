@@ -554,6 +554,7 @@ div.grid-container3 div.grid-item3_2 {
   /* padding: 20px; */
   padding: 1.5rem;
   /* text-align: center; */
+  overflow: hidden;
 }
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_2{
@@ -572,6 +573,7 @@ div.grid-container3 div.grid-item3_3 {
   /* padding: 20px; */
   padding: 1.5rem;
   /* text-align: center; */
+  overflow: hidden;
 }
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_3{
@@ -618,6 +620,7 @@ div.grid-container3 div.grid-item3_6 {
   /* padding: 20px; */
   padding: 1.5rem;
   /* text-align: center; */
+  overflow: hidden;
 }
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_6{
@@ -636,6 +639,11 @@ button.grid-container3_button {
     text-decoration: none;
     display: inline-block;
 
+}
+@media screen and (max-width: 767px){
+  button.grid-container3_button{
+    display: none;
+  }
 }
 button.grid-container3_button:hover {
     background-color: #EBDFCA; /* Green */
@@ -656,11 +664,11 @@ p.grid-container3_text1{
   font-size: 20px;
   color: #3E3A39;
 }
-/* @media screen and (max-width: 767px){
+@media screen and (max-width: 767px){
   p.grid-container3_text1{
-    font-size: 30px;
+    margin-top: 0rem;
   }
-} */
+}
 p.grid-container3_text2{
   margin: 0;
  font-size: 19px;
@@ -669,6 +677,7 @@ p.grid-container3_text2{
 p.grid-container3_text3{
  font-size: 16px;
  color: #3E3A39;
+ text-overflow: ellipsis;
 }
 
 /* 首頁第三屏 圖片樣式 */
@@ -702,6 +711,7 @@ div.shiny button{
 
   font-size: 14px;
 }
+
 /* div.shiny button.shiny p{
   margin: 0;
   font-size: 14px;
