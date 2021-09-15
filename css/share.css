@@ -17,13 +17,13 @@ div.body_parents{
 div.body_parents div.body_lock{
   /* height: 3000px; */
   /* width: 1200px; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   /* font-size: 16px; */
   /* border: 1px solid #28FF28; */
-  display: grid;
+  /* display: grid; */
   /* inline-flex; */
-  padding-top: 40px;
+  /* padding-top: 40px; */
   font-family: 'EB Garamond','Noto Sans TC';
   /* font-family: 'EB Garamond', serif; */
   /* justify-content: space-between; */
@@ -31,15 +31,15 @@ div.body_parents div.body_lock{
 
 /* 首頁第一屏 */
 div.body_parents div.body_lock div.grid-container{
-  /* border: 1px solid red; */
-  /* width: 100%; */
-  margin: 0 auto;
-  margin-bottom: 100px;
-
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 40px;
-  grid-row-gap: 80px;
+  margin: 0;
+  border: 1px solid #484891;
+  width: 100vw;
+  /* height: 760px; */
+  display: inline-flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding: 30px;
 }
 
 
@@ -54,6 +54,7 @@ div.body_parents div.body_lock div.grid-container div.grid-item {
   /* font-size: 30px; */
   /* text-align: center; */
   position: relative;
+  margin-bottom: 30px;
 }
 div.body_parents div.body_lock div.grid-container div.grid-item a{
   text-decoration:none;
@@ -69,7 +70,7 @@ div.other_notes{
   padding: 10px;
   border-radius: 5px;
 
-  transform: translateY(25%);
+  transform: translateY(calc(100% - 150px));
 
   transition: transform .5s;
 }

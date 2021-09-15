@@ -1,5 +1,5 @@
 footer.footer{
-  width: 100%;
+  min-width: 100%;
   /* min-width: 1200px; */
   margin: 0 auto;
   font-size: 0;
@@ -13,8 +13,8 @@ footer.footer{
 }
 footer.footer div.lock{
   /* max-width: 1200px; */
-  width: 1200px;
-  height: 900px;
+  /* max-width: 1200px; */
+  /* height: 900px; */
   margin: 0 auto;
   font-size: 16px;
   /* border: 1px solid #28FF28; */
@@ -23,9 +23,12 @@ footer.footer div.lock{
   /* justify-content: space-between; */
   /* position: absolute; */
 }
-footer.footer div.lock div{
+footer.footer div.lock div.footer_slideshow{
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
+  /* min-height: 366vh; */
+  min-width: 100%;
 }
 /* 文字部分 */
 /* footer.footer div.lock p{
@@ -56,10 +59,11 @@ footer.footer div.lock p.footer_text1{
   margin-bottom: 2rem;
 }
 footer.footer div.lock div.footer_text2{
-  /* text-align:center; */
   display: inline-flex;
   flex-direction:row;
   justify-content:center;
+  /* border: 1px solid #28FF28; */
+  width: 100%;
 }
 footer.footer div.lock div.footer_text2 a.footer_text2_1{
   font-family: 'Noto Sans TC';
@@ -101,26 +105,49 @@ footer.footer div.lock p.footer_text5{
   justify-content:center;
 } */
 
-/* 輪播圖 */
-footer.footer div.lock div.grid-container{
-  /* border: 1px solid red; */
-  /* width: 100%; */
-  margin: 0 auto;
-  margin-bottom: 30px;
 
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 40px;
+footer.footer div.lock{
+  margin: 0;
+  /* border: 1px solid #484891; */
+  width: 100vw;
+  /* height: 760px; */
+  display: inline-flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding: 30px;
 }
-footer.footer div.lock div.grid-container div.grid-item {
-  /* border: 1px solid #467500; */
-  /* padding: 20px; */
-  /* font-size: 30px; */
-  /* text-align: center; */
-}
-/* 圖片陰影 */
-footer.footer div.lock div.grid-container div.grid-item img{
-  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
-  width:366px;
-  height:366px;
-}
+
+div.footer_slideshow div.grid-item {
+    /* border: 1px solid #467500; */
+
+    width:30%;
+    /* height:366px; */
+    overflow:hidden;
+    box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+  }
+  /* 老師新增 */
+  .grid-item a{
+    display:block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+
+  }
+  .grid-item::before{
+    content: "";
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+  }
+  /* 老師新增 */
+div.footer_slideshow div.grid-item img{
+    width: 100%;
+    height: 100%;
+  }

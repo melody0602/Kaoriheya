@@ -1,58 +1,293 @@
 @import "./common/all.css";
-@import "./common/header.css";
+@import "./index_header.css";
 @import "./common/footer.css";
 /* 外部輪播套件 */
 @import "./slick.css";
 @import "./slick-theme.css";
 
+/* 第一屏的所有圖片 */
+img{
+        /* max-width: 100%; */
+}
 
 div.body_parents{
-  width: 100%;
-  margin: 0 auto;
+  /* width: 100%; */
+  margin: 0;
   font-size: 0;
-  /* border: 1px solid black; */
+  font-family: 'EB Garamond','Noto Sans TC';
   display: inline-flex;
+  flex-direction: column;
+}
+
+/* =============== 第一屏 =============== */
+
+div.grid-container-first{
+/* font-family: 'EB Garamond','Noto Sans TC'; */
+margin: 0;
+/* border: 1px solid #28FF28; */
+width: 100vw;
+display: inline-flex;
+justify-content: space-around;
+/* grid-container中的高度變數 */
+/* --grid-container-height: 888px; */
+/* --grid-container-width: 240px; */
+}
+div.body_parents div.grid-container-first div.full_screen{
+  /* border: 1px solid red; */
+  overflow: hidden;
+  height: 760px;
+  min-width: 375px;
+  width: 1440px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  /* 背景圖 */
+  background-image: url("../images/full_screen/01.gif");
+  background-repeat:no-repeat;
+  /* height: 630px; */
+  background-size: cover;
+  background-position: center center;
+}
+/* @media screen and (max-width: 1399.98px){
+  div.body_parents div.grid-container div.full_scree{
+    height: 760px;
+  }
+} */
+/* logo */
+div.logo_box{
+  /* border: 1px solid red; */
+  position: absolute;
+  z-index:2;
+  margin-top: -650px;
+  /* animation-name: logo_animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+}
+div.logo_box img.logo{
+  max-height: 45px;
+}
+div.logo_box img.shiny{
+  max-height: 12px;
+  margin-bottom: 15px;
+  animation-name: shiny_shiny;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  timing-function: ease-in-out;
+}
+div.logo_box img.shiny2{
+  max-height: 5px;
+  margin-bottom: 5px;
+  animation-name: shiny_shiny2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+div.logo_box img.shiny3{
+  max-height: 7px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  animation-name: shiny_shiny3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  timing-function: ease-in-out;
+  animation-delay: 2s;
+}
+div.logo_box img.shiny4{
+  max-height: 7px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  animation-name: shiny_shiny4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  timing-function: ease-in-out;
+}
+div.logo_box img.shiny5{
+  max-height: 12px;
+  margin-bottom: 15px;
+  animation-name: shiny_shiny5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  timing-function: ease-in-out;
+}
+/* logo動畫 */
+@keyframes shiny_shiny {
+  0%{
+    transform: rotate(0deg) scale(.8);
+  }
+  50%{
+    transform: rotate(80deg) scale(1.1);
+  }
+  100%{
+    transform: rotate(0deg) scale(.8);
+  }
+}
+@keyframes shiny_shiny2 {
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(80deg) scale(1.5);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes shiny_shiny3 {
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(-80deg) scale(1.5);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes shiny_shiny4 {
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(-80deg) scale(1.2);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes shiny_shiny5 {
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(-80deg) scale(1.1);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+/* @keyframes logo_animation {
+  0%{
+    transform: translate(0px, 0px);
+  }
+  50%{
+    transform: translate(0px, -5px);
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+} */
+
+/* 標題 */
+div.full_screen img.title{
+  margin-top: -190px;
+  max-width: 620px;
+  max-height: 391px;
+  position: absolute;
+  z-index:2;
+}
+/* 副標題 */
+div.full_screen img.with{
+  margin-top: 700px;
+  height: 15px;
+  position: absolute;
+  z-index:2;
+}
+/* 資訊條 */
+div.label_box{
+  z-index:3;
+  position:fixed;
+  width: 100vw;
+  height: 760px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: 1px solid yellow; */
+  pointer-events: none;
   overflow: hidden;
 }
+div.label_box img.label{
+  top: 50%;
+  height: 35px;
+  width: : 3000px;
+  transform: rotate(5deg);
+  position: absolute;
 
-div.body_parents div.body_lock{
-  /* height: 3000px; */
-  /* width: 1200px; */
-  max-width: 1200px;
-  margin: 0 auto;
-  /* font-size: 16px; */
-  /* border: 1px solid #28FF28; */
-  display: grid;
-  /* inline-flex; */
-  padding-top: 40px;
-  font-family: 'EB Garamond','Noto Sans TC';
-  /* font-family: 'EB Garamond', serif; */
-  /* justify-content: space-between; */
+  /* pointer-events: none; */
 }
-
-/* 首頁第一屏 */
-div.body_parents div.body_lock div.grid-container{
-  /* border: 1px solid red; */
-  /* width: 100%; */
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 40px;
+div.label_box img.label2{
+  top: 50%;
+  height: 35px;
+  width: : 3000px;
+  transform: rotate(-10deg);
+  transform-origin: 40% 40%;
+  position: absolute;
+  /* pointer-events: none; */
 }
+/* 門 */
+div.full_screen img.door{
+  max-width: 100%;
+  min-width: 1440px;
+  min-height: 760px;
+  position: relative;
+  z-index:1;
+  /* opacity: .5; */
+  /* left: -50%; */
+}
+/* =============== 第二屏 =============== */
+div.grid-container{
+margin: 0;
+/* border: 1px solid #484891; */
+width: 100vw;
+/* height: 760px; */
+display: inline-flex;
+justify-content: space-evenly;
+/* flex-direction: column; */
+flex-wrap: wrap;
+padding: 30px;
+}
+/* @media screen and (max-width: 768px){
+  div.grid-container{
+    flex-direction: column;
+    align-items: center;
+  }
+} */
 
-
-/* 卡片文字蓋圖 */
-div.body_parents div.body_lock div.grid-container div.grid-item {
+div.grid-container div.grid-item {
   /* border: 1px solid #467500; */
-  width:366px;
-  height:366px;
+
+  width:30%;
+  /* height:366px; */
   overflow:hidden;
   box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
-  /* padding: 20px; */
-  /* font-size: 30px; */
-  /* text-align: center; */
+  font-size: 30px;
+  text-align: center;
   position: relative;
+  margin: 20px;
+}
+/* 老師新增 */
+.grid-item a{
+  display:block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+
+}
+.grid-item::before{
+  content: "";
+  width: 100%;
+  padding-bottom: 100%;
+  display: block;
+}
+/* 老師新增 */
+div.grid-container div.grid-item img{
+  width: 100%;
+  height: 100%;
 }
 div.other_notes{
   position: absolute;
@@ -60,13 +295,10 @@ div.other_notes{
   left: 0;
   width: 100%;
   background-color: hsla(0, 0%, 100%, .5);
-  /* font-size: .8rem;
-  color: white;
-  padding: 5px 10px; */
   border-radius: 5px;
+  text-align: left;
 
   transform: translateY(100%);
-
   transition: transform .5s;
 }
 div.grid-item:hover div.other_notes{
@@ -84,182 +316,78 @@ div.other_notes p.other_notes_p2{
   color: #3E3A39;
   padding: 5px 10px;
 }
-
-
-
-div.body_parents div.body_lock div.grid-container div.grid-item_two {
-  /* border: 1px solid #467500; */
-  width:366px;
-  height:366px;
-  /* padding: 20px; */
-  /* font-size: 30px; */
-  /* text-align: center; */
-  animation-name: move;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-
-  animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
-}
-div.body_parents div.body_lock div.grid-container div.grid-item_two2 {
-  /* border: 1px solid #467500; */
-  width:366px;
-  height:366px;
-  /* padding: 20px; */
-  /* font-size: 30px; */
-  /* text-align: center; */
-  animation-name: move2;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-
-  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
-}
-/* 文字移出 */
-@keyframes move {
-  0% {
-    transform: translateX(130%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  100%{
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-@keyframes move2 {
-  0% {
-    transform: translateX(-130%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  100%{
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
 /* 圖片滑鼠移過放大效果 */
-div.body_parents div.body_lock div.grid-container div.grid-item img{
+div.grid-container div.grid-item img{
   /* box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3); */
-  width:366px;
-  height:366px;
+  width:100%;
+  height:100%;
   transform:scale(1,1);
   transition: all 0.8s ease-out;
 
 }
-div.body_parents div.body_lock div.grid-container div.grid-item img:hover{
+div.grid-container div.grid-item img:hover{
    transform:scale(1.2,1.2);
 }
+
+/* 文字卡區塊 */
 /* 文字部分 */
-div.body_parents div.body_lock div.grid-container div.grid-item_two p.index_title{
-  /* margin: 0; */
+div.text_text{
+  position: absolute;
+  top:0%;
+}
+div.text_text p.index_title{
+  margin: 0;
   margin-bottom: 1rem;
   /* font-family: 'EB Garamond', serif; */
   font-size: 51px;
   color: #3E3A39;
+  text-align: left;
 }
-div.body_parents div.body_lock div.grid-container div.grid-item_two p.index_text{
+div.text_text p.index_text{
   margin: 0;
   margin-top: 0;
   font-size: 19px;
   color: #3E3A39;
+  text-align: left;
 }
-div.body_parents div.body_lock div.grid-container div.grid-item_two2 p.index_title2{
+@media screen and (max-width: 768px){
+  div.text_text p.index_text{
+    display: none;
+  }
+}
+div.text_text p.index_title2{
   margin: 0;
   margin-bottom: 1rem;
   /* font-family: 'EB Garamond', serif; */
   font-size: 47px;
   color: #8E8E8E;
+  text-align: left;
 }
-div.body_parents div.body_lock div.grid-container div.grid-item_two2 p.index_text2{
+div.text_text p.index_text2{
   /* margin: 0; */
   margin-top: 0;
   font-size: 19px;
   color: #8E8E8E;
+  text-align: left;
 }
-
-/* 首頁第二屏 */
-div.body_parents div.body_lock div.grid-container2{
-  /* border: 1px solid #804040; */
-  /* width: 100%; */
-  margin: 0 auto;
-  padding-top: 50px;
-
-  display: grid;
-  grid-template-columns: 1200px;
-  /* gap: 40px; */
+@media screen and (max-width: 768px){
+  div.text_text p.index_text2{
+    display: none;
+  }
 }
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 {
-  /* border: 1px solid #467500; */
-  height: 625px;
-  background-color: hsla(0, 0%, 100%, .7);
-  border-radius: 10px;
-  text-align:center;
-  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
-  /* text-align: center; */
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 p.test_title{
-  font-size: 38px;
-  font-weight: 500;
-  color: #3E3A39;
-  margin-top: 6rem;
-  margin-bottom: 0;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 p.test_text{
-  font-size: 22px;
-  font-weight: 500;
-  color: #3E3A39;
-  margin-top: 0.7rem;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 div.test_img{
-  margin-bottom: 2rem;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 div.test_img img{
-  width: 340px;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 button.button{
-  background-color: #3E3A39;
-  border: none;
-  /* color: white; */
-  padding: 15px 100px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px 0px hsla(0, 0%, 0%, .3);
-  /* 放大效果 */
-  transform:scale(1,1);
-  transition: all 0.5s ease-out;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 button.button a{
-  text-decoration:none;
-  color: white;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 button.button:hover{
-  transform:scale(1.1,1.1);
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 button.button p.button_p{
-margin: 0;
-}
-div.body_parents div.body_lock div.grid-container2 div.grid-item2 button.button p.button_p2{
-margin: 0.1rem 0 0 0;
-font-size: 0.7rem;
-}
-
+/* =============== 第三屏 =============== */
 /* 往下箭頭 */
-div.body_parents div.body_lock div.grid-container2 div.downarrow{
+
+div.grid-container2 div.downarrow{
   /* border: 1px solid yellow; */
   width: 100px;
   height: 100px;
-  margin-left: 54%;
-  transform: translateX(-50%);
+  /* margin-left: 51%; */
+  margin-left: 10%;
+  /* transform: translateX(-300%); */
   background: transparent;
 }
-div.body_parents div.body_lock div.grid-container2 div.downarrow span.arrow{
+div.grid-container2 div.downarrow span.arrow{
   display: block;
     width: 18px;
     height: 18px;
@@ -289,27 +417,93 @@ div.body_parents div.body_lock div.grid-container2 div.downarrow span.arrow{
     opacity: 0;
     transform: rotate(45deg) translate(15px, 15px);
 }}
-
-
-/* 首頁第三屏 */
-div.body_parents div.body_lock div.grid-container3{
-  /* border: 1px solid #804040; */
-  width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  padding-top: 50px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* grid-template-areas:
-  "grid-item3_1 grid-item3_2 grid-item3_2 grid-item3_2 grid-item3_2 grid-item3_2"
-  "grid-item3_2 grid-item3_2 grid-item3_2  grid-item3_2 grid-item3_2 grid-item3_1"
-  "grid-item3_1 grid-item3_2 grid-item3_2 grid-item3_2 grid-item3_2 grid-item3_2"; */
-  /* grid-template-rows: auto auto auto; */
-  gap: 40px;
-  /* gap: 40px; */
+div.grid-container2{
+margin: 0;
+/* border: 1px solid #484891; */
+width: 100vw;
+/* height: 760px; */
+display: inline-flex;
+justify-content: space-evenly;
+flex-direction: column
+align-items: cente;
+flex-wrap: wrap;
+padding: 30px;
 }
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_1 {
+
+div.grid-container2 div.grid-item2 {
+  /* border: 1px solid #467500; */
+  margin: 50px;
+  height: 600px;
+  width: 100vw;
+  min-width: 375px;
+  background-color: hsla(0, 0%, 100%, .7);
+  border-radius: 10px;
+  text-align:center;
+  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, .3);
+  /* text-align: center; */
+}
+div.grid-container2 div.grid-item2 p.test_title{
+  font-size: 38px;
+  font-weight: 500;
+  color: #3E3A39;
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+div.grid-container2 div.grid-item2 p.test_text{
+  font-size: 22px;
+  font-weight: 500;
+  color: #3E3A39;
+  margin-top: 0.7rem;
+}
+div.grid-container2 div.grid-item2 div.test_img{
+  margin-bottom: 2rem;
+}
+div.grid-container2 div.grid-item2 div.test_img img{
+  width: 340px;
+}
+div.grid-container2 div.grid-item2 button.button{
+  background-color: #3E3A39;
+  border: none;
+  /* color: white; */
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 0px hsla(0, 0%, 0%, .3);
+  /* 放大效果 */
+  transform:scale(1,1);
+  transition: all 0.5s ease-out;
+}
+div.grid-container2 div.grid-item2 button.button a{
+  text-decoration:none;
+  color: white;
+}
+div.grid-container2 div.grid-item2 button.button:hover{
+  transform:scale(1.1,1.1);
+}
+div.grid-container2 div.grid-item2 button.button p.button_p{
+margin: 0;
+}
+div.grid-container2 div.grid-item2 button.button p.button_p2{
+margin: 0.1rem 0 0 0;
+font-size: 0.7rem;
+}
+/* =============== 第四屏 =============== */
+div.grid-container3{
+/* font-family: 'EB Garamond','Noto Sans TC'; */
+margin: 0;
+/* border: 1px solid #28FF28; */
+width: 100vw;
+/* display: inline-flex;
+justify-content: space-around; */
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 40px;
+padding: 50px;
+}
+div.grid-container3 div.grid-item3_1 {
   height: 270px;
   grid-column: 1 / 2;
   /* border: 1px solid #467500; */
@@ -317,7 +511,7 @@ div.body_parents div.body_lock div.grid-container3 div.grid-item3_1 {
   font-size: 30px;
   text-align: center;
 }
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_2 {
+div.grid-container3 div.grid-item3_2 {
   background-color: hsla(0, 0%, 100%, .7);
   border-radius: 10px;
   text-align: left;
@@ -329,7 +523,7 @@ div.body_parents div.body_lock div.grid-container3 div.grid-item3_2 {
   padding: 1.5rem;
   /* text-align: center; */
 }
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_3 {
+div.grid-container3 div.grid-item3_3 {
   background-color: hsla(0, 0%, 100%, .7);
   border-radius: 10px;
   text-align: left;
@@ -341,7 +535,7 @@ div.body_parents div.body_lock div.grid-container3 div.grid-item3_3 {
   padding: 1.5rem;
   /* text-align: center; */
 }
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_4 {
+div.grid-container3 div.grid-item3_4 {
   height: 270px;
   grid-column: 6 / 7;
   /* border: 1px solid #467500; */
@@ -349,7 +543,7 @@ div.body_parents div.body_lock div.grid-container3 div.grid-item3_4 {
   font-size: 30px;
   text-align: center;
 }
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_5 {
+div.grid-container3 div.grid-item3_5 {
   height: 270px;
   grid-column: 1 / 2;
   /* border: 1px solid #467500; */
@@ -357,7 +551,7 @@ div.body_parents div.body_lock div.grid-container3 div.grid-item3_5 {
   font-size: 30px;
   text-align: center;
 }
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_6 {
+div.grid-container3 div.grid-item3_6 {
   background-color: hsla(0, 0%, 100%, .7);
   border-radius: 10px;
   text-align: left;
@@ -410,15 +604,15 @@ p.grid-container3_text3{
 }
 
 /* 首頁第三屏 圖片樣式 */
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_1 img{
+div.grid-container3 div.grid-item3_1 img{
   width: 130px;
 }
 
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_4 img{
+div.grid-container3 div.grid-item3_4 img{
   width: 125px;
 }
 
-div.body_parents div.body_lock div.grid-container3 div.grid-item3_5 img{
+div.grid-container3 div.grid-item3_5 img{
   width: 130px;
   margin-top: 26px;
 
