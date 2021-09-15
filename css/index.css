@@ -361,6 +361,7 @@ div.text_text p.index_text{
   color: #3E3A39;
   text-align: left;
   font-style: italic;
+  font-family: 'EB Garamond', serif;
 }
 @media screen and (max-width: 768px){
   div.text_text p.index_text{
@@ -383,6 +384,7 @@ div.text_text p.index_text2{
   color: #8E8E8E;
   text-align: left;
   font-style: italic;
+  font-family: 'EB Garamond', serif;
 }
 @media screen and (max-width: 768px){
   div.text_text p.index_text2{
