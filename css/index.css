@@ -430,6 +430,11 @@ div.grid-container2 div.downarrow{
   /* transform: translateX(-300%); */
   background: transparent;
 }
+@media screen and (max-width: 767px){
+  div.grid-container2 div.downarrow{
+    margin-left: 30%;
+  }
+}
 div.grid-container2 div.downarrow span.arrow{
   display: block;
     width: 18px;

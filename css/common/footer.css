@@ -115,7 +115,13 @@ footer.footer div.lock{
   justify-content: space-evenly;
   /* flex-direction: column; */
   flex-wrap: wrap;
-  padding: 30px;
+  /* padding: 30px; */
+}
+@media screen and (max-width: 768px){
+  footer.footer div.lock div.footer_slideshow{
+    flex-direction: column;
+    align-items: center
+  }
 }
 
 div.footer_slideshow div.grid-item {
@@ -129,6 +135,14 @@ div.footer_slideshow div.grid-item {
     text-align: center;
     position: relative;
     margin: 20px;
+  }
+  @media screen and (max-width: 768px){
+    div.footer_slideshow div.grid-item{
+      margin: 20px;
+      width:80%;
+      /* flex-direction: column;
+      align-items: center */
+    }
   }
   /* 老師新增 */
   .grid-item a{
