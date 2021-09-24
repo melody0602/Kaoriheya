@@ -20,6 +20,14 @@
 
   </head>
   <body>
+    <!-- 資訊條 -->
+    <div id="test">
+      <div class="label_box">
+        <img class="label" src="./images/full_screen/label_1.png" alt="label">
+        <img class="label2" src="./images/full_screen/label2.png" alt="label">
+      </div>
+    </div>
+    <!-- 資訊條 -->
 
     <header class="header">
 
@@ -104,10 +112,10 @@
     <div class="body_parents">
 
       <div class="grid-container-first">
-        <div class="label_box">
+        <!-- <div class="label_box">
           <img class="label" src="./images/full_screen/label_1.png" alt="label">
           <img class="label2" src="./images/full_screen/label_1.png" alt="label">
-        </div>
+        </div> -->
 
         <div class="full_screen">
 
@@ -360,6 +368,7 @@
       console.log('trigger start');
 
       // 資訊條
+
       gsap.to('.label',{
         x:200,
         opacity: 0,
