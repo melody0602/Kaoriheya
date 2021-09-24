@@ -245,7 +245,7 @@ div.label_box{
 div.label_box img.label{
   top: 50%;
   height: 35px;
-  width:  3000px;
+  width: : 3000px;
   transform: rotate(5deg);
   position: absolute;
 
@@ -254,7 +254,7 @@ div.label_box img.label{
 div.label_box img.label2{
   top: 50%;
   height: 105px;
-  width: 3000px;
+  width: : 3000px;
   transform: rotate(-10deg);
   transform-origin: 40% 40%;
   position: absolute;
@@ -523,7 +523,7 @@ width: 100vw;
 /* height: 760px; */
 display: inline-flex;
 justify-content: space-evenly;
-flex-direction: column;
+flex-direction: column
 align-items: cente;
 flex-wrap: wrap;
 padding: 30px;
