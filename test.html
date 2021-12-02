@@ -100,19 +100,19 @@
 
         <div class="grid-container2">
 
-          <div class="grid-item2">
+          <div class="grid-item2 first_screen">
             <div class="test_img">
               <img src="./images/test_question_img.gif" alt="test img" title="test img"></img>
             </div>
             <div class="test_question">
             <p class="test_title">Q1&nbsp;&nbsp;當你看見一支燭火在搖曳時，會讓你連想到？</p>
-            <button class="button">
+            <button class="button first_button">
               <p class="button_p">和愛人溫馨的燭光晚餐</p>
             </button>
-            <button class="button">
+            <button class="button first_button">
               <p class="button_p">所在的房子即將失火</p>
             </button>
-            <button class="button">
+            <button class="button first_button">
               <p class="button_p">烤箱內正要出爐的麵包</p>
             </button>
             </div>
@@ -125,13 +125,13 @@
           </div>
         </div>
 
-          <div class="downarrow">
+          <!-- <div class="downarrow">
             <span class="arrow"></span>
             <span class="arrow"></span>
             <span class="arrow"></span>
-          </div>
+          </div> -->
 
-          <div class="grid-item2">
+          <div class="grid-item2 second_screen">
             <div class="test_img">
               <img src="./images/test_question2_img.gif" alt="test img" title="test img"></img>
             </div>
@@ -156,13 +156,13 @@
           </div>
         </div>
 
-          <div class="downarrow">
+          <!-- <div class="downarrow">
             <span class="arrow"></span>
             <span class="arrow"></span>
             <span class="arrow"></span>
-          </div>
+          </div> -->
 
-          <div class="grid-item2">
+          <div class="grid-item2 third_screen">
             <div class="test_img">
               <img src="./images/test_question3_img.gif" alt="test img" title="test img"></img>
             </div>
@@ -187,13 +187,13 @@
           </div>
         </div>
 
-          <div class="downarrow">
+          <!-- <div class="downarrow">
             <span class="arrow"></span>
             <span class="arrow"></span>
             <span class="arrow"></span>
-          </div>
+          </div> -->
 
-          <div class="grid-item2">
+          <div class="grid-item2 fourth_screen">
             <div class="test_img">
               <img src="./images/test_question4_img.gif" alt="test img" title="test img"></img>
             </div>
@@ -218,13 +218,13 @@
           </div>
         </div>
 
-          <div class="downarrow">
+          <!-- <div class="downarrow">
             <span class="arrow"></span>
             <span class="arrow"></span>
             <span class="arrow"></span>
-          </div>
+          </div> -->
 
-          <div class="grid-item2">
+          <div class="grid-item2 fifth_screen">
             <div class="test_img">
               <img src="./images/test_question5_img.gif" alt="test img" title="test img"></img>
             </div>
@@ -249,13 +249,13 @@
           </div>
         </div>
 
-        <div class="downarrow">
+        <!-- <div class="downarrow">
           <span class="arrow"></span>
           <span class="arrow"></span>
           <span class="arrow"></span>
-        </div>
+        </div> -->
 
-        <div class="grid-item2" style="margin-bottom: 100px;">
+        <div class="grid-item2" style="margin-bottom: 100px; display: none;">
           <div class="test_img">
             <img src="./images/test_answer_img-8.png" alt="test img" title="test img"></img>
             <button class="grid-container3_button"><p>Buy me♡</p></button>
@@ -372,6 +372,12 @@
       });
 
 
+      // --------------------------------- 換屏 ---------------------------------
+      $(function(){
+        $("button.first_button").on("click",function(){
+          $(".first_screen").toggle("#is_hidden");
+        });
+      });
 
     </script>
 

@@ -84,7 +84,7 @@ div.logo_box img.shiny{
   animation-name: shiny_shiny;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 div.logo_box img.shiny2{
   max-height: 5px;
@@ -92,7 +92,7 @@ div.logo_box img.shiny2{
   animation-name: shiny_shiny2;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   animation-delay: 1s;
 }
 div.logo_box img.shiny3{
@@ -102,7 +102,7 @@ div.logo_box img.shiny3{
   animation-name: shiny_shiny3;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   animation-delay: 2s;
 }
 div.logo_box img.shiny4{
@@ -112,7 +112,7 @@ div.logo_box img.shiny4{
   animation-name: shiny_shiny4;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 div.logo_box img.shiny5{
   max-height: 12px;
@@ -120,7 +120,7 @@ div.logo_box img.shiny5{
   animation-name: shiny_shiny5;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 /* logo動畫 */
 @keyframes shiny_shiny {
@@ -245,7 +245,7 @@ div.label_box{
 div.label_box img.label{
   top: 50%;
   height: 35px;
-  width: : 3000px;
+  width: 3000px;
   transform: rotate(5deg);
   position: absolute;
 
@@ -254,7 +254,7 @@ div.label_box img.label{
 div.label_box img.label2{
   top: 50%;
   height: 105px;
-  width: : 3000px;
+  width: 3000px;
   transform: rotate(-10deg);
   transform-origin: 40% 40%;
   position: absolute;
@@ -448,6 +448,8 @@ div.text_text p.index_title2{
   font-size: 47px;
   color: #8E8E8E;
   text-align: left;
+  /* background-color: hsla(0, 0%, 100%, .7); */
+  /* background-color: rgba(255, 255, 255, .8); */
 }
 @media screen and (max-width: 768px){
   div.text_text p.index_title2{
@@ -477,13 +479,18 @@ div.grid-container2 div.downarrow{
   width: 100px;
   height: 100px;
   /* margin-left: 51%; */
-  margin-left: 10%;
+  margin-left: 45%;
   /* transform: translateX(-300%); */
   background: transparent;
 }
 @media screen and (max-width: 767px){
   div.grid-container2 div.downarrow{
-    margin-left: 30%;
+    margin-left: 52%;
+  }
+}
+@media screen and (max-width: 375.98px){
+  div.grid-container2 div.downarrow{
+    margin-left: 74%;
   }
 }
 div.grid-container2 div.downarrow span.arrow{
@@ -521,10 +528,11 @@ margin: 0;
 /* border: 1px solid #484891; */
 width: 100vw;
 /* height: 760px; */
-display: inline-flex;
+display: flex;
 justify-content: space-evenly;
-flex-direction: column
-align-items: cente;
+flex-direction: column;
+align-content: center;
+/* align-items: cente; */
 flex-wrap: wrap;
 padding: 30px;
 }
@@ -533,8 +541,8 @@ div.grid-container2 div.grid-item2 {
   /* border: 1px solid #467500; */
   margin: 50px;
   height: 600px;
-  width: 100vw;
-  min-width: 375px;
+  width: 80vw;
+  min-width: 370px;
   background-color: hsla(0, 0%, 100%, .7);
   border-radius: 10px;
   text-align:center;
@@ -644,6 +652,12 @@ div.grid-container3 div.grid-item3_2 {
     order:1;
   }
 }
+@media screen and (max-width: 375.98px){
+  div.grid-container3 div.grid-item3_2{
+    height: 300px;
+  }
+}
+
 div.grid-container3 div.grid-item3_3 {
   background-color: hsla(0, 0%, 100%, .7);
   border-radius: 10px;
@@ -671,11 +685,11 @@ div.grid-container3 div.grid-item3_4 {
   /* padding: 20px; */
   font-size: 30px;
   text-align: center;
-  order:2;
 }
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_4{
     grid-column: 1 / 7;
+    order:2;
   }
 }
 div.grid-container3 div.grid-item3_5 {
@@ -685,12 +699,11 @@ div.grid-container3 div.grid-item3_5 {
   /* padding: 20px; */
   font-size: 30px;
   text-align: center;
-  order:4;
 }
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_5{
     grid-column: 1 / 7;
-    order:5;
+    order: 4;
   }
 }
 div.grid-container3 div.grid-item3_6 {
@@ -708,7 +721,12 @@ div.grid-container3 div.grid-item3_6 {
 @media screen and (max-width: 767px){
   div.grid-container3 div.grid-item3_6{
     grid-column: 1 / 7;
-    order:6;
+    order: 5;
+  }
+}
+@media screen and (max-width: 375.98px){
+  div.grid-container3 div.grid-item3_6{
+    height: 300px;
   }
 }
 
@@ -721,6 +739,7 @@ button.grid-container3_button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
 
 }
 @media screen and (max-width: 767px){

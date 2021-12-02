@@ -23,10 +23,12 @@ div.body_parents div.body_lock{
   /* border: 1px solid #28FF28; */
   display: grid;
   /* inline-flex; */
-  padding-top: 40px;
+  padding-top: 70px;
   font-family: 'EB Garamond','Noto Sans TC';
   /* font-family: 'EB Garamond', serif; */
   /* justify-content: space-between; */
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* 首頁第二屏 */
@@ -280,4 +282,10 @@ img.answer_img{
   position:absolute;
   transform: translateX(220%);
   margin-top: -150px;
+}
+
+/* 換屏 */
+#is_hidden{
+  /* display: none; */
+  transform: translateX(-100%);
 }

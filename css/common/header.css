@@ -394,7 +394,7 @@ margin:0px 12px;
   .main_nav{
     /* display: block; */
     display: inline-flex;
-    flex-direction: column
+    flex-direction: column;
     list-style-type: disc;
     margin-block-start: 4em;
     margin-block-end: 2em;
@@ -415,7 +415,8 @@ ul.nav_list{
   /* margin: 0; */
   padding: 0;
   opacity: .8;
-  border-radius:10px;
+  border-radius:0px 0px 10px 10px;
+  width: 98vw;
 }
 ul.nav_list > li{
   display: inline-block;
