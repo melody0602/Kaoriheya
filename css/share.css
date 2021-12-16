@@ -32,7 +32,7 @@ div.body_parents div.body_lock{
 /* 首頁第一屏 */
 div.body_parents div.body_lock div.grid-container{
   margin: 0;
-  border: 1px solid #484891;
+  /* border: 1px solid #484891; */
   width: 100vw;
   /* height: 760px; */
   display: inline-flex;
@@ -56,6 +56,12 @@ div.body_parents div.body_lock div.grid-container div.grid-item {
   position: relative;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 767px){
+  div.body_parents div.body_lock div.grid-container div.grid-item{
+    width:315px;
+    height:315px;
+  }
+}
 div.body_parents div.body_lock div.grid-container div.grid-item a{
   text-decoration:none;
 }
@@ -70,7 +76,7 @@ div.other_notes{
   padding: 10px;
   border-radius: 5px;
 
-  transform: translateY(calc(100% - 150px));
+  transform: translateY(calc(100% - 100px));
 
   transition: transform .5s;
 }

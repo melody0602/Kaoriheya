@@ -416,7 +416,12 @@ ul.nav_list{
   padding: 0;
   opacity: .8;
   border-radius:0px 0px 10px 10px;
-  width: 98vw;
+  /* width: 98vw; */
+}
+@media screen and (max-width: 767px){
+  ul.nav_list{
+    width: 98vw;
+  }
 }
 ul.nav_list > li{
   display: inline-block;
