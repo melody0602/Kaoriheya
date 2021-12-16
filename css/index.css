@@ -595,13 +595,13 @@ div.grid-container2 div.grid-item2 button.button:hover{
 div.grid-container2 div.grid-item2 button.button p.button_p{
 margin: 0;
 font-style: italic;
-font-family: 'EB Garamond', serif;
+font-family: 'EB Garamond', sans-serif;
 }
 div.grid-container2 div.grid-item2 button.button p.button_p2{
 margin: 0.1rem 0 0 0;
 font-size: 0.7rem;
 font-style: italic;
-font-family: 'EB Garamond', serif;
+font-family: 'EB Garamond', sans-serif;
 }
 /* =============== 第四屏 =============== */
 div.grid-container3{
