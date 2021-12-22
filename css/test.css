@@ -253,7 +253,8 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer {
 
   box-sizing: border-box;
   /* border: 1px solid #467500; */
-  height: 625px;
+  /* height: 625px; */
+  height: 79vh;
   background-color: hsla(0, 0%, 100%, .7);
   border-radius: 10px;
   text-align:center;
@@ -266,7 +267,7 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer {
 }
 @media screen and (max-width: 900px){
   div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer{
-
+    flex-direction: column;
   }
 }
 
@@ -306,10 +307,21 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.tes
   font-weight: 600;
   color: #3E3A39;
 }
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img p.test_title2{
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
 
 div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img p.test_title2 img{
   width: 1.7rem;
   margin-right: .5rem;
+}
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img p.test_title2 img{
+    width: 1rem;
+  }
 }
 
 
@@ -324,6 +336,14 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.tes
   font-weight: 600;
   color: #3E3A39;
 }
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_question p.test_title2_2{
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 
 div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_question p.test_title3{
   font-size: 18px;
@@ -335,7 +355,12 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.tes
   margin-bottom: .5rem;
   text-align: left;
 }
-
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_question p.test_title3{
+    font-size: 14px;
+    line-height: 1.8rem;
+  }
+}
 
 div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img{
   display: inline-flex;
@@ -345,9 +370,41 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.tes
   height: 100%;
   padding-left: 5%;
 }
-div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img img{
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img{
+    padding-left: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* height: 80%; */
+    align-items: center;
+  }
+}
+div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img img.answer_img_big{
   margin-top: 1rem;
   width: 340px;
+  display: block;
+}
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img img.answer_img_big{
+    display: none;
+  }
+}
+div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img img.answer_img_rwd{
+  margin-top: 1rem;
+  /* width: 340px; */
+  width: 60%;
+  display: none;
+}
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img img.answer_img_rwd{
+    display: flex;
+  }
+}
+@media screen and (max-width: 576px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_img img.answer_img_rwd{
+    width: 100%;
+  }
 }
 div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer button.button{
   width: 500px;
@@ -379,6 +436,11 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.tes
   /* border: 1px solid yellow; */
   margin-right: 24%;
 }
+@media screen and (max-width: 576px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_answer_button{
+    margin-right: 0;
+  }
+}
 div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_answer_button button.button2{
   margin-right: 1rem;
   margin-top: 30px;
@@ -395,6 +457,12 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.tes
   transform:scale(1,1);
   transition: all 0.2s ease-out;
 }
+@media screen and (max-width: 900px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_answer_button button.button2{
+    margin-top: 0;
+  }
+}
+
 div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer div.test_answer_button button.button2:hover{
   transform:scale(1.1,1.1);
 }
@@ -417,8 +485,13 @@ button.grid-container3_button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
 }
+@media screen and (max-width: 900px){
+  button.grid-container3_button{
+    display: none;
+  }
+}
+
 button.grid-container3_button:hover {
     background-color: #EBDFCA; /* Green */
     transition: all 0.7s
@@ -431,6 +504,11 @@ button.grid-container3_button a{
   color: #3E3A39;
 
   text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+  button.grid-container3_button a{
+    display: none;
+  }
 }
 /* ------------------------------------------------------- 解答區樣式 ------------------------------------------------------- */
 
@@ -522,6 +600,11 @@ img.answer_img{
   /* transform: translateX(220%); */
   right: 10%;
   bottom: 4%;
+}
+@media screen and (max-width: 900px){
+  img.answer_img{
+    width: 60px;
+  }
 }
 
 /* 換屏 */
