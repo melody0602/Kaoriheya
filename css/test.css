@@ -630,7 +630,7 @@ img.answer_img{
 @media screen and (max-width: 576px){
   img.answer_img{
     width: 50px;
-    bottom: 10%;
+    bottom: 12%;
   }
 }
 
