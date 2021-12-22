@@ -169,6 +169,11 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2 div.test_img{
 div.body_parents div.body_lock div.grid-container2 div.grid-item2 div.test_img img{
   width: 340px;
 }
+@media screen and (max-width: 576px){
+  div.body_parents div.body_lock div.grid-container2 div.grid-item2 div.test_img img{
+    width: 250px;
+  }
+}
 div.body_parents div.body_lock div.grid-container2 div.grid-item2 button.button{
   /* width: 500px; */
   max-width: 500px;
@@ -255,7 +260,7 @@ div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer {
 }
 @media screen and (max-width: 900px){
   div.body_parents div.body_lock div.grid-container2 div.grid-item2_answer{
-    
+
   }
 }
 
